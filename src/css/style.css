@@ -468,13 +468,21 @@ table {
   font-weight: 400;
 }
 
-/* line 34, ../../../../Project_2/src/sass/style.sass */
+/* line 41, ../../../../Project_2/src/sass/style.sass */
 .container {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-/* line 39, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 41, ../../../../Project_2/src/sass/style.sass */
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+/* line 49, ../../../../Project_2/src/sass/style.sass */
 .main-secrion {
   height: 780px;
   background: #C9C9C9;
@@ -482,56 +490,85 @@ table {
   margin-bottom: 198px;
 }
 
-/* line 44, ../../../../Project_2/src/sass/style.sass */
+/* line 54, ../../../../Project_2/src/sass/style.sass */
 .main-secrion__nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 49px;
   align-items: center;
-  margin-bottom: 60px;
 }
 
-/* line 54, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 61, ../../../../Project_2/src/sass/style.sass */
+  .main-secrion__logo {
+    width: 80%;
+  }
+}
+
+/* line 66, ../../../../Project_2/src/sass/style.sass */
 .nav-menu__list {
   display: flex;
   flex-direction: row;
 }
 
-/* line 57, ../../../../Project_2/src/sass/style.sass */
+/* line 69, ../../../../Project_2/src/sass/style.sass */
 .nav-menu__list-item {
   font-size: 25px;
   font-family: 'Proxima Nova';
   font-weight: 700;
 }
 
-/* line 62, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 69, ../../../../Project_2/src/sass/style.sass */
+  .nav-menu__list-item {
+    font-size: 18px;
+  }
+}
+
+/* line 77, ../../../../Project_2/src/sass/style.sass */
 .central-background {
   height: 380px;
   margin-bottom: 200px;
   margin-top: 150px;
 }
 
-/* line 67, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 77, ../../../../Project_2/src/sass/style.sass */
+  .central-background {
+    margin-top: 100px;
+    height: 440px;
+  }
+}
+
+/* line 87, ../../../../Project_2/src/sass/style.sass */
 .central-background__img {
-  margin-left: 20px;
-  width: 1400px;
+  margin-left: 30px;
+  max-width: 96%;
   height: 380px;
 }
 
-/* line 73, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 87, ../../../../Project_2/src/sass/style.sass */
+  .central-background__img {
+    max-width: 260%;
+    margin-left: 15px;
+  }
+}
+
+/* line 97, ../../../../Project_2/src/sass/style.sass */
 .main-section__central-container {
   position: relative;
 }
 
-/* line 76, ../../../../Project_2/src/sass/style.sass */
+/* line 100, ../../../../Project_2/src/sass/style.sass */
 .main-section__central-container__hollow-text {
   position: relative;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   font-family: 'Barlow Semi Condensed';
   font-weight: 800;
-  left: 45px;
+  left: 50px;
   top: -140px;
   font-size: 50px;
   color: transparent;
@@ -539,7 +576,14 @@ table {
   letter-spacing: 2px;
 }
 
-/* line 89, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 100, ../../../../Project_2/src/sass/style.sass */
+  .main-section__central-container__hollow-text {
+    display: none;
+  }
+}
+
+/* line 115, ../../../../Project_2/src/sass/style.sass */
 .main-section__central-container__full-text {
   position: relative;
   writing-mode: vertical-lr;
@@ -547,18 +591,25 @@ table {
   text-transform: uppercase;
   font-family: 'Barlow Semi Condensed';
   font-weight: 800;
-  left: 45px;
+  left: 50px;
   top: -515px;
   font-size: 50px;
   color: #fff;
   letter-spacing: 2px;
 }
 
-/* line 102, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 115, ../../../../Project_2/src/sass/style.sass */
+  .main-section__central-container__full-text {
+    display: none;
+  }
+}
+
+/* line 130, ../../../../Project_2/src/sass/style.sass */
 .main-section__central-container__main-heading__word-1 {
   position: absolute;
-  left: 255px;
-  top: -250px;
+  left: 205px;
+  top: -280px;
   font-size: 100px;
   font-family: 'Barlow Semi Condensed';
   font-weight: 800;
@@ -567,11 +618,20 @@ table {
   color: #fff;
 }
 
-/* line 113, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 130, ../../../../Project_2/src/sass/style.sass */
+  .main-section__central-container__main-heading__word-1 {
+    font-size: 60px;
+    left: 220px;
+    top: -305px;
+  }
+}
+
+/* line 145, ../../../../Project_2/src/sass/style.sass */
 .main-section__central-container__main-heading__word-2 {
   position: absolute;
-  left: 255px;
-  top: -160px;
+  left: 205px;
+  top: -200px;
   font-size: 100px;
   font-family: 'Barlow Semi Condensed';
   font-weight: 800;
@@ -580,45 +640,127 @@ table {
   color: #fff;
 }
 
-/* line 124, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 145, ../../../../Project_2/src/sass/style.sass */
+  .main-section__central-container__main-heading__word-2 {
+    font-size: 60px;
+    left: 220px;
+    top: -255px;
+  }
+}
+
+/* line 161, ../../../../Project_2/src/sass/style.sass */
 .main-section__central-container__main-heading__paragraph {
   position: absolute;
-  left: 260px;
-  top: -50px;
-  font-size: 30px;
+  left: 210px;
+  top: -95px;
+  font-size: 24px;
   font-family: 'Proxima Nova';
   font-weight: 700;
   color: #fff;
 }
 
-/* line 133, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 161, ../../../../Project_2/src/sass/style.sass */
+  .main-section__central-container__main-heading__paragraph {
+    font-size: 18px;
+    left: 225px;
+    top: -185px;
+  }
+}
+
+/* line 174, ../../../../Project_2/src/sass/style.sass */
+.main-section__central-container__main-heading__paragraph_2 {
+  position: absolute;
+  left: 210px;
+  top: -70px;
+  font-size: 24px;
+  font-family: 'Proxima Nova';
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  /* line 174, ../../../../Project_2/src/sass/style.sass */
+  .main-section__central-container__main-heading__paragraph_2 {
+    font-size: 18px;
+    left: 225px;
+    top: -165px;
+  }
+}
+
+/* line 187, ../../../../Project_2/src/sass/style.sass */
+.main-section__central-container__main-heading__paragraph_3 {
+  position: absolute;
+  left: 210px;
+  top: -45px;
+  font-size: 24px;
+  font-family: 'Proxima Nova';
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  /* line 187, ../../../../Project_2/src/sass/style.sass */
+  .main-section__central-container__main-heading__paragraph_3 {
+    font-size: 18px;
+    left: 225px;
+    top: -145px;
+  }
+}
+
+/* line 200, ../../../../Project_2/src/sass/style.sass */
 .main-section__central-container__main-heading__circles {
   position: absolute;
-  left: 655px;
+  left: 635px;
   top: -490px;
   width: 100px;
 }
 
-/* line 139, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 200, ../../../../Project_2/src/sass/style.sass */
+  .main-section__central-container__main-heading__circles {
+    display: none;
+  }
+}
+
+/* line 208, ../../../../Project_2/src/sass/style.sass */
 .main-section__bottom-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-top: -90px;
-  z-index: 99;
 }
 
-/* line 146, ../../../../Project_2/src/sass/style.sass */
+/* line 216, ../../../../Project_2/src/sass/style.sass */
 .scroll-down__bottom-container {
   margin-left: 280px;
   /*z-index: 99*/
 }
 
-/* line 151, ../../../../Project_2/src/sass/style.sass */
-.scroll-down__bottom-container__arrow {
-  max-width: 100%;
+@media (max-width: 768px) {
+  /* line 216, ../../../../Project_2/src/sass/style.sass */
+  .scroll-down__bottom-container {
+    margin-left: 80px;
+  }
 }
 
-/* line 154, ../../../../Project_2/src/sass/style.sass */
+/* line 224, ../../../../Project_2/src/sass/style.sass */
+.scroll-down__bottom-container__arrow {
+  max-width: 100%;
+  animation: bounceArrow 1s infinite;
+}
+
+@keyframes bounceArrow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* line 234, ../../../../Project_2/src/sass/style.sass */
 .social-media__bottom-container__icon {
   display: inline-block;
   margin-right: 15px;
@@ -626,25 +768,46 @@ table {
   height: 30px;
 }
 
-/* line 160, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 234, ../../../../Project_2/src/sass/style.sass */
+  .social-media__bottom-container__icon {
+    height: 20px;
+  }
+}
+
+/* line 243, ../../../../Project_2/src/sass/style.sass */
 .last-element {
   margin-right: 0;
 }
 
-/* line 163, ../../../../Project_2/src/sass/style.sass */
+/* line 246, ../../../../Project_2/src/sass/style.sass */
 .second-main-section {
   height: 850px;
   background-image: url("../img/Background image.png");
   padding-top: 80px;
 }
 
-/* line 168, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 246, ../../../../Project_2/src/sass/style.sass */
+  .second-main-section {
+    height: 55%;
+  }
+}
+
+/* line 253, ../../../../Project_2/src/sass/style.sass */
 .second-main-section__box_header__box {
   position: relative;
   z-index: 2;
 }
 
-/* line 172, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 253, ../../../../Project_2/src/sass/style.sass */
+  .second-main-section__box_header__box {
+    width: 50%;
+  }
+}
+
+/* line 259, ../../../../Project_2/src/sass/style.sass */
 .second-main-section__box_header__box__header__phrase-1 {
   font-family: 'Proxima Nova';
   font-weight: 700;
@@ -655,7 +818,16 @@ table {
   margin-left: 280px;
 }
 
-/* line 181, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 259, ../../../../Project_2/src/sass/style.sass */
+  .second-main-section__box_header__box__header__phrase-1 {
+    font-size: 24px;
+    margin-top: -85px;
+    margin-left: 20px;
+  }
+}
+
+/* line 273, ../../../../Project_2/src/sass/style.sass */
 .second-main-section__box_header__box__header__phrase-2 {
   font-family: 'Proxima Nova';
   font-weight: 700;
@@ -666,7 +838,15 @@ table {
   margin-bottom: 40px;
 }
 
-/* line 190, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 273, ../../../../Project_2/src/sass/style.sass */
+  .second-main-section__box_header__box__header__phrase-2 {
+    font-size: 24px;
+    margin-left: 20px;
+  }
+}
+
+/* line 285, ../../../../Project_2/src/sass/style.sass */
 .second-main-section__box_img__image {
   height: 450px;
   position: relative;
@@ -675,7 +855,17 @@ table {
   margin-bottom: 100px;
 }
 
-/* line 197, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 285, ../../../../Project_2/src/sass/style.sass */
+  .second-main-section__box_img__image {
+    width: 50%;
+    height: 50%;
+    margin-left: 120px;
+    margin-top: -20px;
+  }
+}
+
+/* line 297, ../../../../Project_2/src/sass/style.sass */
 .second-main-section__box_text {
   position: relative;
   z-index: 1;
@@ -687,7 +877,16 @@ table {
   margin-left: 700px;
 }
 
-/* line 207, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 297, ../../../../Project_2/src/sass/style.sass */
+  .second-main-section__box_text {
+    height: 50%;
+    width: 50%;
+    margin-left: 250px;
+  }
+}
+
+/* line 312, ../../../../Project_2/src/sass/style.sass */
 .second-main-section__box_text_name {
   font-family: 'Proxima Nova';
   font-weight: 700;
@@ -697,7 +896,14 @@ table {
   padding-bottom: 10px;
 }
 
-/* line 215, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 312, ../../../../Project_2/src/sass/style.sass */
+  .second-main-section__box_text_name {
+    font-size: 20px;
+  }
+}
+
+/* line 322, ../../../../Project_2/src/sass/style.sass */
 .second-main-section__box_text_text {
   font-family: 'Proxima Nova';
   font-weight: 400;
@@ -707,14 +913,31 @@ table {
   width: 360px;
 }
 
-/* line 223, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 322, ../../../../Project_2/src/sass/style.sass */
+  .second-main-section__box_text_text {
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 10px;
+    width: 220px;
+  }
+}
+
+/* line 336, ../../../../Project_2/src/sass/style.sass */
 .third-main-section {
   height: 600px;
   margin-top: 80px;
   margin-bottom: 80px;
 }
 
-/* line 228, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 336, ../../../../Project_2/src/sass/style.sass */
+  .third-main-section {
+    display: none;
+  }
+}
+
+/* line 343, ../../../../Project_2/src/sass/style.sass */
 .third-main-section__heading-paragraph {
   font-family: 'Proxima Nova';
   font-weight: 700;
@@ -726,7 +949,14 @@ table {
   margin-bottom: 20px;
 }
 
-/* line 238, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 343, ../../../../Project_2/src/sass/style.sass */
+  .third-main-section__heading-paragraph {
+    font-size: 24px;
+  }
+}
+
+/* line 356, ../../../../Project_2/src/sass/style.sass */
 .third-main-section__benefits {
   display: flex;
   flex-wrap: nowrap;
@@ -734,7 +964,16 @@ table {
   margin: 0 -15px;
 }
 
-/* line 244, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 356, ../../../../Project_2/src/sass/style.sass */
+  .third-main-section__benefits {
+    display: block;
+    text-align: center;
+    margin-left: 30%;
+  }
+}
+
+/* line 368, ../../../../Project_2/src/sass/style.sass */
 .third-main-section__benefits_item {
   max-width: 320px;
   width: 60%;
@@ -755,7 +994,17 @@ table {
   align-items: center;
 }
 
-/* line 263, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 368, ../../../../Project_2/src/sass/style.sass */
+  .third-main-section__benefits_item {
+    max-width: 220px;
+    width: 60%;
+    height: 220px;
+    margin-bottom: 100px;
+  }
+}
+
+/* line 392, ../../../../Project_2/src/sass/style.sass */
 .third-main-section__benefits_text {
   max-width: 250px;
   width: 100%;
@@ -776,7 +1025,7 @@ table {
   align-items: center;
 }
 
-/* line 282, ../../../../Project_2/src/sass/style.sass */
+/* line 411, ../../../../Project_2/src/sass/style.sass */
 .third-main-secrion__benefits_text_paragrapg {
   font-family: 'Proxima Nova';
   font-weight: 400;
@@ -785,14 +1034,14 @@ table {
   text-align: center;
 }
 
-/* line 289, ../../../../Project_2/src/sass/style.sass */
+/* line 419, ../../../../Project_2/src/sass/style.sass */
 .forth-main-section {
   height: 300px;
   background-image: url("../img/Background image.png");
   padding-top: 80px;
 }
 
-/* line 294, ../../../../Project_2/src/sass/style.sass */
+/* line 424, ../../../../Project_2/src/sass/style.sass */
 .forth-main-section__heading {
   font-family: 'Proxima Nova';
   font-weight: 700;
@@ -803,12 +1052,19 @@ table {
   margin-bottom: 50px;
 }
 
-/* line 303, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 424, ../../../../Project_2/src/sass/style.sass */
+  .forth-main-section__heading {
+    font-size: 35px;
+  }
+}
+
+/* line 435, ../../../../Project_2/src/sass/style.sass */
 .forth-main-section__button {
   text-align: center;
 }
 
-/* line 306, ../../../../Project_2/src/sass/style.sass */
+/* line 438, ../../../../Project_2/src/sass/style.sass */
 .btn {
   border: none;
   font-family: 'Proxima Nova';
@@ -821,7 +1077,8 @@ table {
   margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 700;
+  color: #f2f2f2;
   outline: none;
   position: relative;
   -webkit-transition: all 0.3s;
@@ -829,7 +1086,15 @@ table {
   transition: all 0.3s;
 }
 
-/* line 325, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 438, ../../../../Project_2/src/sass/style.sass */
+  .btn {
+    padding: 18px 60px;
+    font-size: 16px;
+  }
+}
+
+/* line 461, ../../../../Project_2/src/sass/style.sass */
 .btn:after {
   content: '';
   position: absolute;
@@ -839,24 +1104,23 @@ table {
   transition: all 0.3s;
 }
 
-/* line 334, ../../../../Project_2/src/sass/style.sass */
+/* line 470, ../../../../Project_2/src/sass/style.sass */
 .btn-1 {
   background: #DF0000;
 }
 
-/* line 337, ../../../../Project_2/src/sass/style.sass */
+/* line 473, ../../../../Project_2/src/sass/style.sass */
 .btn-1:hover {
   background: #B90000;
   top: 2px;
-  color: #000;
 }
 
-/* line 343, ../../../../Project_2/src/sass/style.sass */
+/* line 478, ../../../../Project_2/src/sass/style.sass */
 .btn-1:active {
   background: #B90000;
 }
 
-/* line 347, ../../../../Project_2/src/sass/style.sass */
+/* line 482, ../../../../Project_2/src/sass/style.sass */
 .btn-1:before {
   position: absolute;
   height: 100%;
@@ -867,14 +1131,21 @@ table {
   width: 60px;
 }
 
-/* line 358, ../../../../Project_2/src/sass/style.sass */
+/* line 493, ../../../../Project_2/src/sass/style.sass */
 .footer-section {
   height: 300px;
   background: #C9C9C9;
   padding-top: 80px;
 }
 
-/* line 364, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 493, ../../../../Project_2/src/sass/style.sass */
+  .footer-section {
+    height: 230px;
+  }
+}
+
+/* line 502, ../../../../Project_2/src/sass/style.sass */
 .first_line {
   display: flex;
   justify-content: space-between;
@@ -882,7 +1153,7 @@ table {
   position: relative;
 }
 
-/* line 370, ../../../../Project_2/src/sass/style.sass */
+/* line 508, ../../../../Project_2/src/sass/style.sass */
 .cont_word {
   font-family: Proxima Nova;
   font-weight: 700;
@@ -893,7 +1164,7 @@ table {
   padding-left: 1060px;
 }
 
-/* line 379, ../../../../Project_2/src/sass/style.sass */
+/* line 517, ../../../../Project_2/src/sass/style.sass */
 .cont_info {
   float: right;
   text-align: right;
@@ -903,18 +1174,26 @@ table {
   color: #000;
 }
 
-/* line 387, ../../../../Project_2/src/sass/style.sass */
+@media (max-width: 768px) {
+  /* line 517, ../../../../Project_2/src/sass/style.sass */
+  .cont_info {
+    font-size: 14px;
+    margin-top: -60px;
+  }
+}
+
+/* line 528, ../../../../Project_2/src/sass/style.sass */
 .data {
   text-decoration: none;
   color: #000;
 }
 
-/* line 391, ../../../../Project_2/src/sass/style.sass */
+/* line 532, ../../../../Project_2/src/sass/style.sass */
 .data:hover {
   color: #DF0000;
 }
 
-/* line 394, ../../../../Project_2/src/sass/style.sass */
+/* line 535, ../../../../Project_2/src/sass/style.sass */
 .box_container {
   width: 100%;
   height: 600px;
@@ -926,7 +1205,7 @@ table {
   padding-bottom: 50px;
 }
 
-/* line 404, ../../../../Project_2/src/sass/style.sass */
+/* line 545, ../../../../Project_2/src/sass/style.sass */
 form {
   display: flex;
   flex-direction: column;
@@ -936,7 +1215,7 @@ form {
   border-radius: 10px;
 }
 
-/* line 414, ../../../../Project_2/src/sass/style.sass */
+/* line 553, ../../../../Project_2/src/sass/style.sass */
 .contact_heading {
   font-family: Proxima Nova;
   font-weight: 700;
@@ -945,7 +1224,7 @@ form {
   margin-bottom: 20px;
 }
 
-/* line 421, ../../../../Project_2/src/sass/style.sass */
+/* line 560, ../../../../Project_2/src/sass/style.sass */
 input, textarea {
   border: 0;
   margin: 10px 0;
