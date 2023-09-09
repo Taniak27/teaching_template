@@ -9,6 +9,7 @@
   <title>English test</title>
   
   <style type="text/css">
+
     body{
       font-family: Arial, Helvetica, sans-serif;
       font-size: 16px;
@@ -22,10 +23,22 @@
       margin-bottom: 198px;
     }
 
+    @media (max-width: 768px) {
+      .data {
+        font-size: 18px;
+      }
+    }
+
     .info{
       width: 80%;
       margin: 0 auto;
     }
+
+    @media (max-width: 768px) {
+    .info {
+      width: 100%; 
+    }
+  }
 
     .quiz_conteiner{
       width: 80%;
@@ -41,6 +54,13 @@
       padding-bottom: 40px
     }
 
+
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 30px;
+      }
+    }
+
     h2{
       text-align: center;
       font-size: 30px;
@@ -49,6 +69,13 @@
       margin-top: -80px;
       padding-bottom: 40px
     }
+
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 26px;
+      }
+    }
+
 
     .intro_text{
       text-align: center;
@@ -60,6 +87,15 @@
       padding-right: 150px;
       padding-left: 150px;
       line-height: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .intro_text {
+        font-size: 16px;
+        line-height: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
     }
 
     .timer{
@@ -76,6 +112,14 @@
       margin-bottom: 20px;
       padding: 10px;
     }
+
+    @media (max-width: 768px) {
+      .question {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+    }
     .question:nth-child(odd){
       margin-right: 5%;
       font-size: 18px;
@@ -87,12 +131,27 @@
       font-family: "Proxima Nova";
       font-weight: 700;
     }
+
+    @media (max-width: 768px) {
+      .question p {
+        font-size: 16px;
+        line-height: 16px
+      }
+    }
     .answers{
       margin-bottom: 20px;
       font-size: 18px;
       font-family: "Proxima Nova";
       font-weight: 400;
     }
+
+    @media (max-width: 768px) {
+      .answers {
+        font-size: 16px;
+        line-height: 16px
+      }
+    }
+
     .answers label:not(:first-child){
       border-top: 1px solid #e0e0e0;
     }
@@ -117,6 +176,14 @@
       width: 720px;
       border-radius: 5px;
       text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .result {
+        font-size: 18px;
+        width: 420px;
+        margin-left: 20px;
+      }
     }
 
     .social-media__bottom-container__icon {
@@ -144,6 +211,36 @@
       margin-left: 250px;
     }
 
+    @media (max-width: 768px) {
+      .test_btn {
+        margin-left: 120px;
+      }
+    }
+ 
+    .data_conect {
+      font-size: 16px;
+      text-decoration: none;
+      color: #000;
+    }
+    .data_conect:hover {
+      color: #DF0000;
+    }
+
+    @media (max-width: 768px) {
+      .data_conect {
+        font-size: 14px;
+        text-decoration: none;
+        color: #000;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .data_conect:hover {
+        color: #DF0000;
+      }
+    }
+    
+
     .info {
       width: 80%;
       margin: 0 auto;
@@ -153,6 +250,7 @@
       margin-left: 200;
       margin-bottom: 100px;
     }
+    
 
   </style>
 </head>
@@ -735,7 +833,7 @@
 <div class="footer-section">
   <div class="container">
     <div class="first_line">
-      <a href=""><img class="main-secrion__logo" src="icons/Logo.svg" alt=""></a>
+      <a href="index.html"><img class="main-secrion__logo" src="icons/Logo.svg" alt=""></a>
       <p class="cont_word"><a class="data" href="test.html">Contact</a></p>
     </div>
 
@@ -750,11 +848,11 @@
   
 
         <div class="cont_info">
-        <p class="cont_info__tel">Phone: <a href="tel:+15879686392" class="data">+1 (587) 968-6392 </a></p>
+        <p class="cont_info__tel">Phone: <a href="tel:+15879686392" class="data_conect">+1 (587) 968-6392 </a></p>
         <br>
-        <p class="cont_info__tel">Phone: <a href="tel:+380637684185" class="data">+38 (063) 768-4185 </a></p>
+        <p class="cont_info__tel">Phone: <a href="tel:+380637684185" class="data_conect">+38 (063) 768-4185 </a></p>
         <br>
-        <p>E-mail: <a href="mailto: englishnikisite@gmail.com" class="data">englishnikisite@gmail.com</a></p>
+        <p>E-mail: <a href="mailto: englishnikisite@gmail.com" class="data_conect">englishnikisite@gmail.com</a></p>
         <br>
         <p>Mon - Fri: &nbsp; 9:00AM - 5:00PM</p>
         </div>
